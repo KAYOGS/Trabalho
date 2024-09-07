@@ -10,7 +10,7 @@ public class NavegadorWeb {
 
         String entrada;
         String dados;
-        String ctrl = "ctrl z";
+        String voltar = "voltar";
 
         do {
             System.out.println("-----------------------------------------------------------------------------");
@@ -20,7 +20,7 @@ public class NavegadorWeb {
                 historico.add(dados);
             }
 
-            if(dados == null ? ctrl == null : dados.equals(ctrl)){
+            if(dados == null ? voltar == null : dados.equals(voltar)){
                 historico.pop();
                 historico.pop();
             }
